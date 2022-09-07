@@ -12,6 +12,14 @@
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        function generatePDF() {
+            // Choose the element that our invoice is rendered in.
+            const element = document.getElementById('invoice');
+            // Choose the element and save the PDF for our user.
+            html2pdf().from(element).save();
+        }
+    </script>
 
     
 </head>
@@ -89,7 +97,7 @@
                             <!-- Button to generate and download the pdf. Available for desktop. -->
                             <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
                             <div>
-                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                                <a download="" href="assets/Chukwumaobi Nguma.pdf" class="home__button-movil">Download</a>
                             </div>
                         </div>
 
